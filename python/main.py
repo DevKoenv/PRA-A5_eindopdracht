@@ -14,4 +14,4 @@ def data4():
 
     filteredData = data[violationsFilter & dateFilter]
 
-    return filteredData[['datum', 'team1', 'team2', 'uitslag', 'scheidsrechter']]
+    return filteredData[['datum', 'team1', 'team2', 'uitslag', 'scheidsrechter']].to_string(index=False)
