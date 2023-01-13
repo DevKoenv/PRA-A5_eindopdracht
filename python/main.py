@@ -8,3 +8,10 @@ def data1():
 
     return violationsSum
 
+def data4():
+    dateFilter = (data['datum'] >= (datetime.today() - timedelta(days=21)).strftime('%d/%m/%Y'))
+    violationsFilter = (data['overtredingen'] <= 1)
+
+    filteredData = data[violationsFilter & dateFilter]
+
+    return filteredData[['datum', 'team1', 'team2', 'uitslag', 'scheidsrechter']]
