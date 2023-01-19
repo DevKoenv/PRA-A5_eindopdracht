@@ -15,3 +15,20 @@ def data4():
     filteredData = data[violationsFilter & dateFilter]
 
     return filteredData[['datum', 'team1', 'team2', 'uitslag', 'scheidsrechter']].to_string(index=False)
+
+
+with open('totaleOvertredingen.txt', 'w') as f:
+    f.write(f'{data1()}')
+    f.close()
+
+with open('gemiddeldeOvertredingen.txt', 'w') as f:
+    f.write(f'{data2()}')
+    f.close()
+
+with open('zwartboek.txt', 'w') as f:
+    f.write(f'{data3()}')
+    f.close()
+
+with open('eregalerij.txt', 'w') as f:
+    f.write(f'{data4()}')
+    f.close()
