@@ -85,7 +85,99 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ==========================================================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background-color: #f6f6f6;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+header {
+  margin: 20px 0;
+}
+
+h1 {
+  font-family: "Faster One", cursive;
+  font-size: 75px;
+  line-height: 50px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+header p {
+  font-family: "Roboto mono", monospace;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.item-small {
+  width: 45%;
+  padding: 16px;
+  background-color: #fff;
+  text-align: center;
+
+  border: 1px solid #f0f0f0;
+  border-radius: 1rem;
+}
+
+.item-large {
+  width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+
+  border: 1px solid #f0f0f0;
+  border-radius: 1rem;
+}
+
+h2 {
+  font-family: "Sofia Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Sofia Sans", sans-serif;
+}
+
+p .num {
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  font-size: 64px;
+}
+
+pre {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+  margin-top: 0.9rem;
+}
+
+footer {
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  color: grey;
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +352,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
